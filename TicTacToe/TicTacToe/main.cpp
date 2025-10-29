@@ -30,7 +30,6 @@ int main(int argc, const char * argv[])
             case 't':
                 std::cout << "Terminating program. BYE FELICIA" << std::endl;
                 return EXIT_SUCCESS;
-                break;
             case 'n':
                 std::cout << "GIVE ME SOMETHING TO BELIEVE IN, AS ALIVE AS YOU NEED ME TO BE" << std::endl;
                 break;
