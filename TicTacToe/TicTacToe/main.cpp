@@ -9,7 +9,7 @@
 
 int main(int argc, const char * argv[])
 {
-    // insert code here...
     std::cout << "Hello, Tic Tac Toe!\n";
+    
     return EXIT_SUCCESS;
 }
