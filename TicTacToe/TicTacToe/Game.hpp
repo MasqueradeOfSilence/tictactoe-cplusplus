@@ -15,6 +15,9 @@ class Game
 public:
     Game();
     void start();
+    bool gameLoop();
+private:
+    void play();
 };
 
 #endif /* Game_hpp */
