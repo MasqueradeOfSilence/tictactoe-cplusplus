@@ -21,11 +21,16 @@ int main(int argc, const char * argv[])
         std::cin >> input;
         char selection = std::tolower(input.at(0));
         Game game;
+        bool keep_going = true;
         switch (selection)
         {
             case 's':
                 std::cout << "Starting game. Ready to die?" << std::endl;
-                game.start();
+                keep_going = game.start();
+                if (!keep_going)
+                {
+                    return EXIT_SUCCESS;
+                }
                 break;
             case 'q':
                 std::cout << "Quitting game" << std::endl;
@@ -35,9 +40,11 @@ int main(int argc, const char * argv[])
                 return EXIT_SUCCESS;
             case 'n':
                 std::cout << "GIVE ME SOMETHING TO BELIEVE IN, AS ALIVE AS YOU NEED ME TO BE" << std::endl;
+                std::cout << "yeah try again pls" << std::endl;
                 break;
             default:
                 std::cout << "lmao what? try again" << std::endl;
+                std::cout << "I don't speak whatever-the-f-that-is-anese" << std::endl;
                 break;
         }
     }

@@ -14,10 +14,10 @@ class Game
 {
 public:
     Game();
-    void start();
+    bool start();
     bool gameLoop();
 private:
-    void play();
+    bool play();
 };
 
 #endif /* Game_hpp */

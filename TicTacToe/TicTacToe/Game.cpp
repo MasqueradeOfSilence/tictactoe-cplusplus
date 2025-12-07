@@ -24,23 +24,24 @@ bool Game::gameLoop()
     char selection = std::tolower(input.at(0));
     if (selection == 'q')
     {
+        std::cout << "Quitting :( You quitter. You are weak and your ancestors are weak. Alexa play My Heart is Broken by Evanescence" << std::endl;
         return false;
     }
     return true;
 }
 
-void Game::start()
+bool Game::start()
 {
-    std::cout << "It's playtime bby! Game start! (apatapateh)" << std::endl;
-    // todo: quitting doesn't actually exit the whole program. 
-    play();
+    std::cout << "It's playtime bby! Game start! (Alexa play APT by Rose)" << std::endl;
+    return play();
 }
 
-void Game::play()
+bool Game::play()
 {
     bool play = true;
     while (play)
     {
         play = gameLoop();
     }
+    return play;
 }
